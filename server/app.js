@@ -11,11 +11,11 @@ app.use("/api/cars/", require("./routes/carsRoute"));
 app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "admirable-meerkat-a14a26.netlify.app/build")));
 
 // Serve the index.html file for all non-API routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "admirable-meerkat-a14a26.netlify.app/build", "index.html"));
 });
 
 // MIDDLEWARES
